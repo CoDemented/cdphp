@@ -1,18 +1,6 @@
 
 
 
-<!-- <div class="wrapper">
-
-    <div class="hero-text-box">
-        <div id='textLoop'>
-            <h1>
-                <span> LOREM IPSUM ISTEQUE PROEWAGEMO LOREM IPSUM ISTEQUE </span>
-                <span> LOREM IPSUM ISTEQUE </span>
-            </h1>
-        </div>
-    </div>
-
-</div> -->
 
 <style>
     .hero-text-box {
@@ -48,7 +36,7 @@
         padding: 10px 15px;
     }
 </style>
-
+<div class="container"><span id="changeText">blah</span></div>
 
 
 <script src="<?php echo _ASSETS; ?>js/jquery341.js"></script>
@@ -67,10 +55,35 @@
         element.fadeOut(500);
         setTimeout(function () {
             element = texts.eq(currText);
-            element.fadeIn(500);
+            element.fadeIn(1000);
             
         }, 500);
-    }, 3000);
+    }, 2000);
+
+
+
+
+
+
+
+
+    var textArray = ["text1","text2","text3"];
+var index = 0;
+setInterval(function(){        
+$("#changeText").animate({
+opacity:0
+},function()
+{
+   if(textArray.length > index) {
+   $(this).text(textArray[index]).animate({opacity:1})
+   index++; 
+   }
+   else
+   index = 0;
+});
+},2000);
+
+
 
 </script>
 

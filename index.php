@@ -14,8 +14,17 @@ include 'inc/header.php';
 <!-- ------------------------Hero -->
 <section class="hero">
     <div class="wrapper">
-        <div class="hero-text">
+        
+    <!-- <div class="hero-text-box">
+        <div id='textLoop'>
+            <h1>
+                <span> LOREM IPSUM ISTEQUE 1 </span>
+                <span> LOREM IPSUM ISTEQUE 2</span>
+                <span> LOREM IPSUM ISTEQUE 3</span>
+            </h1>
         </div>
+    </div> -->
+
     </div>
 </section>
 <!-- ------------------------Hero -->
@@ -34,7 +43,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             <div class="service-box">
@@ -44,7 +53,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             <div class="service-box">
@@ -54,7 +63,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             <div class="service-box">
@@ -64,7 +73,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             <div class="service-box">
@@ -74,7 +83,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             <div class="service-box">
@@ -84,7 +93,7 @@ include 'inc/header.php';
                 <div class="bottom-box">
                     <h3>Service Title Name</h3>
                     <p>Description for service simple dummy text.</p>
-                    <a class="call-to-action"" href=" #"><span>Read More</span></a>
+                    <a class="call-to-action" href=" #"><span>Read More</span></a>
                 </div>
             </div>
             
@@ -93,7 +102,7 @@ include 'inc/header.php';
 </section>
 <!-- ------------------------Services -->
 
-
+<a class="call-to-action-btn" href=" #"><span>Read More</span></a>
 
 
 <!-- <a class="call-to-action" href="#"><span>Home</span></a> -->

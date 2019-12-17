@@ -37,15 +37,16 @@ header {
   .header-box nav a {
     color: #262626;
     padding: 10px 20px;
-    white-space: nowrap; }
-    .header-box nav a:hover {
+    white-space: nowrap;
+    font-weight: 600; }
+    .header-box nav a:hover, .header-box nav a.active {
       color: #005ca3; }
 
 a {
   color: #0067b8;
   text-decoration: none; }
 
-a.call-to-action {
+a.call-to-action, a.call-to-action-btn {
   padding: 10px 3px 7px 0;
   position: relative;
   border: 2px solid transparent;
@@ -59,7 +60,7 @@ a.call-to-action {
   text-align: left;
   text-transform: uppercase;
   font-weight: 600; }
-  a.call-to-action::after {
+  a.call-to-action::after, a.call-to-action-btn::after {
     font-size: 22px;
     margin-top: -3.5px;
     margin-left: 4px;
@@ -71,12 +72,20 @@ a.call-to-action {
     font-family: "Font Awesome 5 Pro";
     font-weight: 300;
     text-shadow: 0 0 1px #0067b8; }
-  a.call-to-action span {
+  a.call-to-action span, a.call-to-action-btn span {
     display: inline;
     border: 2px solid transparent;
     transition: .2s ease-in-out; }
-  a.call-to-action:hover span {
+  a.call-to-action:hover span, a.call-to-action-btn:hover span {
     border-bottom-color: #0067b8;
+    margin-right: 6px; }
+
+a.call-to-action-btn {
+  background: #333;
+  color: #fff !important;
+  padding: 10px 25px; }
+  a.call-to-action-btn:hover span {
+    border-bottom-color: #fff;
     margin-right: 6px; }
 
 button.call-to-action {
@@ -245,7 +254,7 @@ section.bg-grey {
     padding: 0 10px;
     padding-bottom: 20px; }
     .service-box .bottom-box h3 {
-      color: #0067b8;
+      color: #333;
       border-left: 5px solid grey;
       padding-left: 5px;
       margin-left: -10px; }

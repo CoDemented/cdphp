@@ -1,5 +1,5 @@
 <?php
-define("_SITE_URL", "http://localhost/cm-php/");
+define("_SITE_URL", "http://localhost/cdphp/");
 define("_ASSETS", _SITE_URL . "assets/");
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ define("_ASSETS", _SITE_URL . "assets/");
                 <img src="https://via.placeholder.com/500x130" alt="">
             </div>
             <nav>
-                <a href="#"><span>Home</span></a>
+                <a href="#" class="active"><span>Home</span></a>
                 <a href="#"><span>About</span></a>
                 <div class="dd-wrapper">
                     <a class="dropdown" href="#"><span>Services</span><i class="fal fa-angle-down"></i></a>
@@ -35,7 +35,8 @@ define("_ASSETS", _SITE_URL . "assets/");
                 </div>
                 <a href="#"><span>Portfolio</span></a>
                 <a href="#"><span>Contact Us</span></a>
-                <button class="call-to-action" href="#">Get in touch</button>
+<!--                <button class="call-to-action" href="#">Get in touch</button>-->
+                <a class="call-to-action-btn" href=" #"><span>Get in touch</span></a>
             </nav>
             <button id="btnMenu">X</button>
         </div>

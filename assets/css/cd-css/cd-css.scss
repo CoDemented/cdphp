@@ -61,8 +61,9 @@ header {
       color: $color-navlinks;
       padding: 10px 20px;
       white-space: nowrap;
+      font-weight: 600;
 
-      &:hover {
+      &:hover, &.active {
         color: $color-primary-hover;
       }
     }
@@ -75,7 +76,7 @@ a {
   text-decoration: none;
 }
 
-a.call-to-action {
+a.call-to-action, a.call-to-action-btn {
   padding: 10px 3px 7px 0;
   position: relative;
   border: 2px solid transparent;
@@ -112,6 +113,15 @@ a.call-to-action {
 
   &:hover span {
     border-bottom-color: $color-primary;
+    margin-right: 6px;
+  }
+}
+a.call-to-action-btn {
+  background: #333;
+  color: #fff !important;
+  padding: 10px 25px;
+  &:hover span {
+    border-bottom-color: #fff;
     margin-right: 6px;
   }
 }
@@ -233,7 +243,6 @@ h1.heading {
 
 section {
   padding: 70px 0 90px 0;
-
 }
 
 section.bg-grey {
@@ -344,7 +353,7 @@ section.bg-grey {
     padding-bottom: 20px;
 
     h3 {
-      color: $color-primary;
+      color: #333;
       border-left: 5px solid grey;
       padding-left: 5px;
       margin-left: -10px;
