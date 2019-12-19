@@ -10,7 +10,7 @@ define("_ASSETS", _SITE_URL . "assets/");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/fa-pro/css/all.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/normalize.css">
-    <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/cd-css/cd-css.css">
+    <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/style/app.css">
 
     <title>BP-Project</title>
 </head>
@@ -36,7 +36,7 @@ define("_ASSETS", _SITE_URL . "assets/");
                 <a href="#"><span>Portfolio</span></a>
                 <a href="#"><span>Contact Us</span></a>
 <!--                <button class="call-to-action" href="#">Get in touch</button>-->
-                <a class="call-to-action-btn" href=" #"><span>Get in touch</span></a>
+                <a class="call-to-action-primary" href=" #" style="color: #fff;"><span>Get in touch</span></a>
             </nav>
             <button id="btnMenu">X</button>
         </div>
