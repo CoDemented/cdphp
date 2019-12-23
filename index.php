@@ -14,13 +14,33 @@ include 'inc/header.php';
 <!--</style>-->
 <!-- ------------------------Hero -->
 <section class="hero">
-   <input type="radio" id="s-1" name="slider-control" checked="checked">
+
+<div id="slider">
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+    <li>SLIDE 1</li>
+    <li style="background: #aaa;">SLIDE 2</li>
+    <li>SLIDE 3</li>
+    <li style="background: #aaa;">SLIDE 4</li>
+  </ul>  
+</div>
+
+<div class="slider_option">
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">Autoplay Slider</label>
+</div> 
+
+
+
+
+   <!-- <input type="radio" id="s-1" name="slider-control" checked="checked">
     <input type="radio" id="s-2" name="slider-control">
     <input type="radio" id="s-3" name="slider-control">
     <div class="js-slider">
         <figure class="js-slider_item img-1">
             <div class="js-slider_img">
-                <img class="c-img-w-full" src="https://via.placeholder.com/1600x700" alt="">
+                <img class="c-img-w-full" src="<?php echo _ASSETS; ?>imgs/hb1.jpg" alt="">
             </div>
             <figcaption class="wo-caption">
                 <h3 class="wo-h3">
@@ -37,7 +57,7 @@ include 'inc/header.php';
         </figure>
         <figure class="js-slider_item img-2">
             <div class="js-slider_img">
-            <img class="c-img-w-full" src="https://via.placeholder.com/1600x700" alt="">
+            <img class="c-img-w-full" src="<?php echo _ASSETS; ?>imgs/hb1.jpg" alt="">
             </div>
             <figcaption class="wo-caption">
                 <h3 class="wo-h3">
@@ -54,7 +74,7 @@ include 'inc/header.php';
         </figure>
         <figure class="js-slider_item img-3">
             <div class="js-slider_img">
-            <img class="c-img-w-full" src="https://via.placeholder.com/1600x700" alt="">
+            <img class="c-img-w-full" src="<?php echo _ASSETS; ?>imgs/hb1.jpg" alt="">
             </div>
             <figcaption class="wo-caption">
                 <h3 class="wo-h3">
@@ -82,7 +102,7 @@ include 'inc/header.php';
             <div class="js-slider-indi indi-2"></div>
             <div class="js-slider-indi indi-3"></div>
         </div>
-    </div>
+    </div> -->
 </section>
 <!-- ------------------------Hero -->
 <!-- <a class="call-to-action" href=" #"><span>Read More</span></a>
@@ -91,7 +111,7 @@ include 'inc/header.php';
 
 <a class="call-to-action-black" href=" #"><span>Read More</span></a> -->
 <!-- ------------------------Services -->
-<section>
+<!-- <section>
     <div class="wrapper">
         <h1 class="heading"><span>The</span>Services<span>We Provide</span></h1>
         <div class="services-container">
@@ -110,7 +130,7 @@ include 'inc/header.php';
 
         </div>
     </div>
-</section>
+</section> -->
 <!-- ------------------------Services -->
 
 
@@ -120,41 +140,11 @@ include 'inc/header.php';
 
 
 <!--------------------------------------------Packages-->
-<section class="bg-grey">
+<!-- <section class="bg-grey">
     <div class="wrapper">
         <h1 class="heading"><span>The</span>Package<span>Plans</span></h1>
-
         <div class="package-container">
-            <div class="package-box">
-                <div class="pkg-header">
-                    <span>01</span>
-                    <h1><span>Package One</span></h1>
-                    <span>$99.00</span>
-                </div>
-                <ul>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                </ul>
-            </div>
-            <div class="package-box">
-                <div class="pkg-header">
-                    <span>01</span>
-                    <h1><span>Package One</span></h1>
-                    <span>$99.00</span>
-                </div>
-                <ul>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                    <li><span>Details line for package one</span></li>
-                </ul>
-            </div>
+
             <div class="package-box">
                 <div class="pkg-header">
                     <span>01</span>
@@ -171,10 +161,8 @@ include 'inc/header.php';
                 </ul>
             </div>
         </div>
-</section>
-<script>
 
-</script>
+</section> -->
 <!--------------------------------------------Packages-->
 
 
