@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Slider</title>
+</head>
+
+<body>
+
+
+
+    <div class="cd-slider">
+        <div class="slides">
+            <div class="slide active">
+                <h1>This is slide 1</h1>
+            </div>
+            <div class="slide">
+                <h1>This is slide 2</h1>
+            </div>
+            <div class="slide">
+                <h1>This is slide 3</h1>
+            </div>
+        </div>
+        <div class="controls">
+            <span class="prev">
+                <</span> <span class="next">>
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+    <style>
+        .cd-slider {
+            background: #f9f9f9;
+        }
+
+        .slides {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        .slide {
+            padding: 10px;
+            border: 1px solid green;
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .controls span {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            border: 1px solid;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script>
+        var slideBox = $(".slides");
+
+        $("span.next").click(function(){
+        
+            var slideActive = slideBox.find('div.slide.active');
+            
+            slideActive.removeClass('active');
+            slideActive.next().addClass('active');
+
+        });
+
+    </script>
+</body>
+
+</html>
