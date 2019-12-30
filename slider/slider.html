@@ -11,55 +11,40 @@
 <body>
 
 
-
     <div class="cd-slider">
-        <div class="slides">
-            <div class="slide active">
-                <h1>This is slide 1</h1>
-            </div>
-            <div class="slide">
-                <h1>This is slide 2</h1>
-            </div>
-            <div class="slide">
-                <h1>This is slide 3</h1>
-            </div>
-        </div>
-        <div class="controls">
-            <span class="prev">
-                <</span> <span class="next">>
-            </span>
-        </div>
+        <ul>
+            <li>
+                <h1>Title 1</h1>
+                <h4>This is description</h4>
+            </li>
+            <li>
+                <h1>Title 2</h1>
+                <h4>This is description</h4>
+            </li>
+            <li>
+                <h1>Title 3</h1>
+                <h4>This is description</h4>
+            </li>
+
+        </ul>
+        <button class="prev">{</button>
+        <button class="next">}</button>
     </div>
-
-
-
-
     <style>
-        .cd-slider {
-            background: #f9f9f9;
+        .cd-slider ul {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
         }
 
-        .slides {
-            width: 100%;
-            border: 1px solid red;
-        }
-
-        .slide {
-            padding: 10px;
-            border: 1px solid green;
+        div.cd-slider ul li {
             display: none;
+            list-style: none;
+            background: red;
         }
 
-        .slide.active {
+        div.cd-slider ul li:first-child {
             display: block;
-        }
-
-        .controls span {
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-            border: 1px solid;
-            cursor: pointer;
         }
     </style>
 
@@ -69,31 +54,31 @@
 
 
 
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script>
-        var slideBox = $(".slides");
-        var slideSingle = $("div.slide");
-
-        $("span.next").click(function () {
-
-            var slideActive = slideBox.find('div.slide.active');
-
-            slideActive.removeClass('active');
-            slideActive.next().addClass('active');
-
+        $('button.next').click(function (event) {
+            clearInterval(autoSlide);
+            slideNext ();
         });
+        
+        var autoSlide = setInterval(() => {
+            slideNext ();
+        }, 1000);
 
-        $( "div.slide" ).each( function( index, element ){
-    console.log(slideSingle);
-});
+         function slideNext () {
+            // event.preventDefault();
+            setTimeout(() => {
+                var currSlide = $('div.cd-slider ul li:visible');
+            var nextSlide = currSlide.next();
+            
+            if (nextSlide.length == 0) {
+                nextSlide = currSlide.siblings(':first');
+            }
+            currSlide.hide(0);
+            nextSlide.fadeIn(1000);
+            }, 500);
+        }
+        
     </script>
 </body>
 
