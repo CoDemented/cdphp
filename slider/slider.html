@@ -34,7 +34,6 @@
 
 
 
-
     <style>
         .cd-slider {
             background: #f9f9f9;
@@ -81,16 +80,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script>
         var slideBox = $(".slides");
+        var slideSingle = $("div.slide");
 
-        $("span.next").click(function(){
-        
+        $("span.next").click(function () {
+
             var slideActive = slideBox.find('div.slide.active');
-            
+
             slideActive.removeClass('active');
             slideActive.next().addClass('active');
 
         });
 
+        $( "div.slide" ).each( function( index, element ){
+    console.log(slideSingle);
+});
     </script>
 </body>
 
