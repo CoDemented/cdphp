@@ -12,85 +12,63 @@
 
 
 
-    <div class="cd-slider">
-        <div class="slides">
-            <div class="slide active">
-                <h1>This is slide 1</h1>
-            </div>
-            <div class="slide">
-                <h1>This is slide 2</h1>
-            </div>
-            <div class="slide">
-                <h1>This is slide 3</h1>
-            </div>
-        </div>
-        <div class="controls">
-            <span class="prev">
-                <</span> <span class="next">>
-            </span>
-        </div>
-    </div>
-
-
-
-
 
     <style>
-        .cd-slider {
-            background: #f9f9f9;
+        div.cd-slider ul  {
+            padding: 0px;
+            margin: 0;
         }
-
-        .slides {
-            width: 100%;
-            border: 1px solid red;
-        }
-
-        .slide {
-            padding: 10px;
-            border: 1px solid green;
+        div.cd-slider ul li {
             display: none;
-        }
-
-        .slide.active {
-            display: block;
-        }
-
-        .controls span {
-            width: 50px;
-            height: 50px;
-            display: inline-block;
             border: 1px solid;
-            cursor: pointer;
+            text-align: center;
+            padding: 50px;
+        }
+
+        div.cd-slider ul li:first-child {
+            display: block;
         }
     </style>
 
 
 
-
-
-
-
-
-
-
-
+    <div class="cd-slider">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <button class="prev"><<</button>
+        <button class="next">>></button>
+    </div>
 
 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script>
-        var slideBox = $(".slides");
-
-        $("span.next").click(function(){
-        
-            var slideActive = slideBox.find('div.slide.active');
-            
-            slideActive.removeClass('active');
-            slideActive.next().addClass('active');
-
+        $('button.next').click(function (event) { 
+            event.preventDefault(); 
+            var currSlide = $('div.cd-slider ul li:visible');
+            var nextSlide = currSlide.next();
+            if (nextSlide.length == 0) {
+                nextSlide = currSlide.siblings(':first');
+            }
+            currSlide.hide();
+            nextSlide.show();
         });
-
+        $('button.prev').click(function (event) { 
+            event.preventDefault(); 
+            var currSlide = $('div.cd-slider ul li:visible');
+            var prevSlide = currSlide.prev();
+            if (prevSlide.length == 0) {
+                prevSlide = currSlide.siblings(':last');
+            }
+            currSlide.hide();
+            prevSlide.show();
+        });
     </script>
 </body>
 
