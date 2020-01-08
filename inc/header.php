@@ -11,7 +11,7 @@ define("_ASSETS", _SITE_URL . "assets/");
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/fa-pro/css/all.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/normalize.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/style/app.css">
-
+    
     <title>BP-Project</title>
 </head>
 <body oncontextmenu="return true;">
@@ -35,7 +35,7 @@ define("_ASSETS", _SITE_URL . "assets/");
                 </div>
                 <a href="#"><span>Portfolio</span></a>
                 <a href="#"><span>Contact Us</span></a>
-<!--                <button class="call-to-action" href="#">Get in touch</button>-->
+<!-- <button class="call-to-action" href="#">Get in touch</button>-->
                 <a class="call-to-action-primary" href=" #" style="color: #fff;"><span>Get in touch</span></a>
             </nav>
             <button id="btnMenu">X</button>

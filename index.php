@@ -1,14 +1,39 @@
 <?php
-include 'inc/header.php';
+    include 'inc/header.php';
 ?>
 
 
-<section class="hero">
 
-  <a href="#" class="control_next"><i class="fal fa-chevron-right"></i></a>
-  <a href="#" class="control_prev"><i class="fal fa-chevron-left"></i></a>
 
-</section>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  
+
+</head>
+<body>
+
+  <div class="slider">
+    <div>
+        <div class="wrapper">
+            <h3>asfasdf</h3>
+            <h1>sdfsdf</h1>
+            <h2>sdfsdfsd</h2>
+            <h4>sdfsdfsdfsdfsdfsdfdsfsdfsdf</h4>
+        </div>
+    </div>
+    <div><div class="wrapper">
+            <h3>asfasd sff</h3>
+            <h1>sdfs df</h1>
+            <h2>sdfsd fsd</h2>
+            <h4>sdfsdfsdf sdfsdfsdfdsf sdfsdf</h4>
+        </div></div>
+  </div>
+
+
+
+
+
 <!-- ------------------------Hero -->
 <!-- <a class="call-to-action" href=" #"><span>Read More</span></a>
 
@@ -20,7 +45,6 @@ include 'inc/header.php';
     <div class="wrapper">
         <h1 class="heading"><span>The</span>Services<span>We Provide</span></h1>
         <div class="services-container">
-
 
             <div class="service-box">
                 <div class="image">
