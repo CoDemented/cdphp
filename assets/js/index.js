@@ -21,21 +21,28 @@ console.log("height: " + $(".box").height() + " width: " + $(".box").width());
 
 
 
-// ---------------- Hero Slider
+// --------------------------- Hero Slider
 $(document).ready(function(){
     $('.slider').bxSlider({
         mode: 'vertical',
         speed: 300,
         startSlide: 0,
+
+        preloadImages: false,
         adaptiveHeight: false,
-        adaptiveHeightSpeed: 300,
+        adaptiveHeightSpeed: 200,
         preloadImages: 'visible',
-        touchEnabled: true
+        touchEnabled: true,
+        infiniteLoop: true,
+        auto: true,
+        pause: 4000,
+        autoHover: true,
+        keyboardEnabled: true,
 
-
-      });
+        controls: false,
+    });
   });
-// ---------------- Hero Slider
+// --------------------------- Hero Slider
 
 
 

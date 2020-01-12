@@ -11,7 +11,7 @@ define("_ASSETS", _SITE_URL . "assets/");
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/fa-pro/css/all.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/normalize.css">
     <link rel="stylesheet" href="<?php echo _ASSETS; ?>css/style/app.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <title>BP-Project</title>
 </head>
 <body oncontextmenu="return true;">
