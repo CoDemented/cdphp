@@ -19,7 +19,7 @@ define("_ASSETS", _SITE_URL . "assets/");
     <div class="wrapper">
         <div class="header-box">
             <div class="logo">
-                <img src="https://via.placeholder.com/500x130" alt="">
+                <img src="<?php echo _ASSETS; ?>imgs/cd-logo.svg" alt="">
             </div>
             <nav>
                 <a href="#" class="active"><span>Home</span></a>
@@ -35,76 +35,9 @@ define("_ASSETS", _SITE_URL . "assets/");
                 </div>
                 <a href="#"><span>Portfolio</span></a>
                 <a href="#"><span>Contact Us</span></a>
-<!-- <button class="call-to-action" href="#">Get in touch</button>-->
                 <a class="call-to-action-primary" href=" #" style="color: #fff;"><span>Get in touch</span></a>
             </nav>
             <button id="btnMenu">X</button>
         </div>
     </div>
-    <style>
-        .dd-wrapper {
-            display: inline;
-            height: 19px;
-            padding: 25px 0;
-            position: relative;
-        }
-
-        .dropdown-box {
-            position: absolute;
-            top: 67px;
-            background: white;
-            box-shadow: 0px 3px 4px -3px #333;
-            display: none;
-            left: 0
-        }
-
-        .dropdown-box a {
-            display: block;
-            font-size: 14px;
-            white-space: nowrap;
-        }
-
-        .dd-wrapper a.dropdown i.fal.fa-angle-down {
-            padding-left: 5px;
-        }
-
-        .dd-wrapper:hover .dropdown-box {
-            display: block;
-        }
-
-      
-
-        #btnMenu {
-            display: none;
-        }
-
-        @media (max-width: 1024px) {
-            #btnMenu {
-                display: block;
-            }
-
-            .header-box nav {
-                background: #e4e4e4;
-                width: 100%;
-                height: 100vh;
-                position: absolute;
-                left: 0;
-                top: 0;
-                max-width: 0px;
-                padding-left: 0px;
-                overflow: hidden;
-                transition: .3s ease-in-out;
-                opacity: 0;
-                padding-top: 80px;
-                box-shadow: 1024px 0 0px 160px #e4e4e4;
-                z-index: 2;
-            }
-
-            nav a {
-                display: block;
-            }
-        }
-    </style>
 </header>
-
-
